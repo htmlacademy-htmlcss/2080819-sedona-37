@@ -104,3 +104,39 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+.subscription {
+  background-image: url("../images/Subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscription .text {
+  color: #ffffff;
+}
+
+.subscription-button {
+  background-color: #82b3d3;
+}
+
+.footer-social-item {
+  color: #82b3d3;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
