@@ -23,6 +23,15 @@ body {
   margin: 0;
 }
 
+/* .button {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: inherit;
+} */
+
 .navigation-link {
   width: 68px;
   height: 24px;
@@ -141,8 +150,9 @@ body {
   margin: 0;
 }
 
-.subscription .text {
+.subscription-text {
   color: #ffffff;
+  margin: 0;
 }
 
 .subscription-button {
@@ -159,6 +169,11 @@ body {
 
 .footer-social-item {
   color: #82b3d3;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-phone {
@@ -247,4 +262,73 @@ body {
 
 .hotel-card-title {
   margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+}
+
+/* Объединить это позже? */
+.hotel-card-category {
+  color: #333333;
+}
+.hotel-card-price {
+  color: #333333;
+}
+
+.more-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.favorites-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+}
+
+.subscription-catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subscription-catalog-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
