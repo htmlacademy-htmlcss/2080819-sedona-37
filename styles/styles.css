@@ -14,6 +14,19 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -35,7 +48,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
-  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* .button {
@@ -46,6 +59,30 @@ body {
   text-decoration: none;
   font-family: inherit;
 } */
+
+.page-header {
+  position: relative;
+}
+
+.navigation-logo {
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 892px;
+  margin: 0 auto;
+  padding-left: 238px;
+  padding-right: 70px;
+}
+
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+}
 
 .navigation-link {
   width: 68px;
@@ -60,6 +97,7 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .main-container {
@@ -70,6 +108,14 @@ body {
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #3f5e72;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .header-buttom {
@@ -85,11 +131,26 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 69px;
+}
+
+.advantages {
+  width: 660px;
+  margin: auto;
+}
+
+.advantages-lead {
+  margin-top: 69px;
+  margin-bottom: 25px;
 }
 
 .text {
   text-align: center;
   margin: 0;
+}
+
+.advantages-text {
+  margin-bottom: 69px;
 }
 
 .advantages-list {
