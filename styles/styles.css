@@ -135,7 +135,6 @@ body {
 }
 
 .advantages {
-  width: 660px;
   margin: auto;
 }
 
@@ -154,7 +153,10 @@ body {
 }
 
 .advantages-list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -245,6 +247,10 @@ body {
   background-color: #82b3d3;
   text-decoration: none;
   font-family: inherit;
+}
+
+.main-footer {
+  display: flex;
 }
 
 .footer-social-item {
