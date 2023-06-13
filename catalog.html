@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
-
+  <div class="body-container">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -37,31 +38,28 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда</a>
+          <a class="navigation-link header-buttom" href="#">Хочу сюда</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="main-inner">
-    <header class="inner-header">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
-
-
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">
-            <span class="visually-hidden">Главная</span>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ul>
-    </header>
+  <main class="main-inner main-container">
 
     <section class="filter-hotels">
-      <h2 class="visually-hidden">Фильтры</h2>
+      
+        <h1 class="filter-hotels-title">Гостиницы Седоны</h1>  
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -109,14 +107,14 @@
             </li>
           </ul>
           <fieldset>
-            <legend>Стоимость, ₽:</legend>
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <label>от<input type="text" value="0"></label>
             <label>до<input type="text" value="9000"></label>
           </fieldset>
         </fieldset>
 
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="submit">Сбросить</button>
+        <button class="button-apply" type="submit">Применить</button>
+        <button class="button-reset" type="submit">Сбросить</button>
       </form>
     </section>
 
@@ -208,6 +206,7 @@
           <p class="hotel-card-rating">Рейтинг: 5</p>
         </li>
       </ul>
+
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -230,9 +229,9 @@
       </ul>
     </section>
 
-    <section class="subscription">
-      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="subscription-catalog">
+      <h2 class="subscription-catalog-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
         <button class="button subscription-button" type="submit">Подписаться</button>
@@ -264,7 +263,7 @@
         height="33">
     </a>
   </footer>
-
+</div>
 </body>
 
 </html>
