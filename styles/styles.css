@@ -79,25 +79,47 @@ body {
   padding-right: 70px;
 }
 
-.navigation-user {
-  max-width: 268px;
-  margin-left: auto;
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+  box-sizing: border-box;
 }
 
 .navigation-link {
-  width: 68px;
-  height: 24px;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
   margin: 0;
-  padding: 0;
+  padding: 20px 16px;
+  text-align: center;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
+}
+
+.navigation-user {
+  max-width: 270px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.header-buttom {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 34px;
 }
 
 .main-container {
@@ -118,12 +140,6 @@ body {
   margin: 0 auto;
 }
 
-.header-buttom {
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #756157;
-}
-
 .lead {
   font-weight: 700;
   font-size: 30px;
@@ -131,16 +147,15 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 69px;
 }
 
 .advantages {
-  margin: auto;
+  padding-top: 69px;
+  text-align: center;
 }
 
 .advantages-lead {
-  margin-top: 69px;
-  margin-bottom: 25px;
+  margin: 0 285px 25px 285px;
 }
 
 .text {
@@ -149,7 +164,7 @@ body {
 }
 
 .advantages-text {
-  margin-bottom: 69px;
+  margin: 0 270px 69px 270px;
 }
 
 .advantages-list {
@@ -158,33 +173,60 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  background: rgba(131, 179, 211, 0.12);
+  list-style-type: none;
+}
+
+.advantages-description {
+  color: #333333;
+  margin: 0;
+}
+
+.advantages-item:first-child {
+  display: flex;
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.advantages-item:last-child {
+  display: flex;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
   margin: 0;
 }
 
-.advantages-description {
+.services {
+  padding-top: 64px;
   text-align: center;
-  color: #333333;
-  margin: 0;
+}
+
+.services-lead {
+  margin: 0 347px 20px 347px;
+}
+
+.services-text {
+  margin: 0 350px 64px 350px;
 }
 
 .services-list {
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .services-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
+
   text-transform: uppercase;
   margin: 0;
 }
@@ -195,13 +237,23 @@ body {
   margin: 0;
 }
 
+.appointment {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .appointment-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.appointment-text {
+  margin-bottom: 54px;
 }
 
 .hotel-search {
@@ -220,6 +272,9 @@ body {
   background-image: url("../images/Subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #3f5e72;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription-title {
@@ -230,11 +285,14 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscription-text {
   color: #ffffff;
+  text-align: center;
   margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscription-button {
@@ -251,6 +309,11 @@ body {
 
 .main-footer {
   display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
 }
 
 .footer-social-item {
@@ -260,6 +323,10 @@ body {
 .footer-social-list {
   margin: 0;
   padding: 0;
+}
+
+.phone {
+  width: 340px;
 }
 
 .contacts-phone {
@@ -275,6 +342,8 @@ body {
   background-image: url("../images/filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .filter-hotels-title {
@@ -295,6 +364,10 @@ body {
   color: #ffffff;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -304,11 +377,13 @@ body {
 }
 
 .catalog-filter-group {
+  border: none;
   margin: 0;
   padding: 0;
 }
 
 .catalog-filter-list {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
