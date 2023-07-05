@@ -73,16 +73,11 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 892px;
   margin: 0 auto;
   padding-left: 238px;
   padding-right: 70px;
-}
-
-.navigation-user .navigation-link {
-  min-width: 44px;
-  min-height: 64px;
-  box-sizing: border-box;
 }
 
 .navigation-link {
@@ -98,9 +93,15 @@ body {
   position: relative;
 }
 
+.navigation-user .navigation-item.item:last-child{
+  width: 44px;
+  height: 64px;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 450px;
   margin: 0;
   padding: 0;
@@ -117,6 +118,33 @@ body {
   border-top: 2px solid #756257;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+
+  }
+
+.navigation-item{
+  position: relative;
+}
+
+.number-of-favorites{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+ padding: 5px;
+  border-radius: 50%; 
+  background-color: #7DB54F;
+  color: #FfffFF;
+font-size: 10px;
+line-height: 10px;  
+}
+
 .navigation-user {
   max-width: 270px;
   margin-left: auto;
@@ -131,6 +159,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
+  height: 36px;
+  border-radius: 4px;
+  display: block;
 }
 
 .main-container {
@@ -228,8 +259,20 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 62px;
+  margin: 0 auto 62px auto;
+    width: 180px;
+    position: relative;
+}
+
+.advantages-title::after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+left: 50%;
+transform: translateX(-50%);
+  height: 2px;
+  width: 60px;
+  border-top: 2px solid rgba(0, 0, 0, 0.30);;
 }
 
 .advantages-img {
@@ -260,11 +303,11 @@ body {
 
 .services-item {
   width: 230px;
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-items: flex-start;
-  padding: 90px 85px;
+  padding: 80px 85px;
+  padding-top: 183px;
   margin-top: auto;
   margin-bottom: auto;
   background: rgba(131, 179, 211, 0.2);
@@ -287,6 +330,27 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
+}
+
+.house{
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center top 80px;
+}
+
+.services-list .burger {
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center top 80px;
+}
+
+.gift{
+  background-image: url("../images/gift.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center top 80px;
 }
 
 .appointment {
@@ -556,12 +620,15 @@ body {
 
 .sorting {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1060px;
   margin: 0 auto 40px auto;
 }
 
 .sorting-text {
   margin: 0;
+  margin-right: auto;
   padding: 0;
   font-weight: 700;
   font-size: 30px;
@@ -569,7 +636,59 @@ body {
   text-transform: uppercase;
 }
 
+.select-control{
+  width: 292px;
+padding: 14px 20px;
+  border-radius: 4px;
+border: 2px solid #E5E5E5;
+font-family: inherit;
+color: #333333;
+font-size: 18px;
+line-height: 21px;
+}
+
+.sorting-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: 70px;
+}
+
+.sorting-button{
+  border-radius: 4px;
+border: 2px solid #E5E5E5;
+width: 48px;
+height: 48px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.sorting-button:hover {
+  border-color: #000000;
+}
+
+.selector:focus {
+  border-color: #68A2CA;
+}
+
+.sorting-button-current {
+  border-color: #000000;
+}
+
+.sorting-card{
+  background-image: url(../images/cards.svg);
+}
+
+.sorting-big-photo{
+  background-image: url(../images/big-photo.svg);
+}
+
+.sorting-list{
+   background-image: url(../images/list.svg);
+}
+
 .sorting .button {
+  display: block;
   width: 48px;
   height: 48px;
 }
@@ -736,3 +855,8 @@ body {
   line-height: 26px;
   color: #333333;
 }
+
+/* a { color: red; }
+a:visited { color: grey; }
+a:hover { color: blue; }
+a:active { background-color: yellow; }/*
