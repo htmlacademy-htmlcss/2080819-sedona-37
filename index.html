@@ -220,7 +220,7 @@
             method="post"
           >
             <input
-              class="subscription-field"
+              class="subscription-field field"
               placeholder="Ваш e-mail"
               type="email"
               name="subscription-email"
@@ -347,7 +347,7 @@
               <input
                 type="text"
                 id="firstDate"
-                class="popap-first-date"
+                class="popap-first-date field"
                 placeholder="Укажите дату"
                 name="arrive-date"
                 value="27 апреля 2020"
@@ -356,7 +356,14 @@
             </div>
             <div class="modal-date">
               <label>Дата выезда:</label>
-              <input type="text" value="1 сентября 2023" />
+              <input
+                type="text"
+                id="lastDate"
+                class="popap-last-date field"
+                placeholder="Укажите дату"
+                name="leave-date"
+                value="1 сентября 2023"
+              />
               <p class="answer-message">
                 На эти даты есть свободные номера. Пока есть.
               </p>
@@ -412,7 +419,40 @@
               </div>
 
               <div class="quantity-wrap">
-                <label class="kids">Дети:</label>
+                <span class="form-label form-label-icon"
+                  ><label class="kids form-label">Дети:</label>
+                  <span class="tooltip"
+                    ><button
+                      class="tooltip-toggle"
+                      type="button"
+                      aria-labelledby="tooltip-label-date"
+                    >
+                      <svg
+                        class="tooltip-icon"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9 4H11V6H9V4ZM11 16H9V7H11V16Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-date"
+                      >Укажите количество детей, которые будут с вами, возраст
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются
+                      бесплатно.</span
+                    ></span
+                  >
+                </span>
                 <div class="buttons-wrap">
                   <button class="kids-minus quantity-button" type="button">
                     <svg
