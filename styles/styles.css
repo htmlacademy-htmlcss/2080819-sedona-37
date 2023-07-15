@@ -257,13 +257,11 @@ a.navigation-main:hover {
 
 .advantages-wrap {
   width: 400px;
-  min-height: 389px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-items: flex-start;
-  padding: 103px 85px;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding: 113px 85px 103px;
   box-sizing: border-box;
 }
 
@@ -280,8 +278,10 @@ a.navigation-main:hover {
   width: 100%;
   color: #ffffff;
 }
+
 .advantages-item-wide .advantages-wrap {
   background-color: #82b3d3;
+  padding: 103px 85px 80px;
 }
 
 .advantages-title {
@@ -297,7 +297,7 @@ a.navigation-main:hover {
 .advantages-title::after {
   content: "";
   position: absolute;
-  bottom: -30px;
+  bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
@@ -312,6 +312,7 @@ a.navigation-main:hover {
 .advantages-img {
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .services {
@@ -388,7 +389,7 @@ a.navigation-main:hover {
 }
 
 .appointment {
-  padding-top: 96px;
+  padding-top: 97px;
   padding-bottom: 96px;
 }
 
@@ -484,8 +485,8 @@ a.navigation-main:hover {
   font-family: PT Sans;
   line-height: 24px;
   background: #f2f2f2;
-  border: 3px solid #ffffff;
   outline: none;
+  border: 3px solid #f2f2f2;
 }
 
 .subscription-field {
@@ -493,11 +494,11 @@ a.navigation-main:hover {
 }
 
 .subscription-field:hover {
-  background-color: rgba(230, 230, 230, 1);
+  background-color: #e6e6e6;
 }
 
 .subscription-field:focus {
-  border-color: #83b3d3;
+  border: 3px solid #83b3d3;
 }
 
 .subscription-button {
@@ -519,10 +520,12 @@ a.navigation-main:hover {
 
 .subscription-button:focus {
   background: #68a2ca;
+  outline: none;
 }
 
 .subscription-button:active {
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .main-footer {
@@ -531,7 +534,7 @@ a.navigation-main:hover {
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 70px 30px 70px;
+  padding: 45px 70px 30px 70px;
 }
 
 .footer-social-item {
@@ -546,25 +549,27 @@ a.navigation-main:hover {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 1px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  width: 145px;
+  width: 150px;
 }
 
-.footer-social-item svg {
+.footer-social-item a {
   fill: rgba(131, 179, 211, 1);
 }
 
-.footer-social-item svg:hover {
+.footer-social-item a:hover {
   fill: rgba(104, 162, 202, 1);
 }
 
-.footer-social-item svg:focus {
-  fill: rgba(104, 162, 202, 1);
+.footer-social-item a:focus {
+  fill: #68a2ca;
+  outline: none;
 }
 
-.footer-social-item svg:active {
+.footer-social-item a:active {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -587,10 +592,15 @@ a.navigation-main:hover {
 
 .contacts-phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .contacts-phone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link {
+  margin-top: 2px;
 }
 
 .htmlacademy-link:hover {
@@ -599,6 +609,7 @@ a.navigation-main:hover {
 
 .htmlacademy-link:focus {
   fill: #756157;
+  outline: none;
 }
 
 .htmlacademy-link:active {
@@ -652,24 +663,26 @@ a.navigation-main:hover {
 
 .modal-date {
   display: grid;
-  align-items: end;
   gap: 4px;
   grid-template-columns: 133px 440px;
   margin-bottom: 23px;
 }
 
 .modal-date input {
-  padding: 12px 20px;
+  padding: 12px 49px 12px 20px;
   border: none;
   border-radius: 4px;
   background: #f2f2f2;
-  background-image: url(../images/calendar.svg);
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  height: 48px;
+  width: 440px;
+  box-sizing: border-box;
 }
 
 .error-message {
@@ -696,6 +709,7 @@ a.navigation-main:hover {
   line-height: 24px;
   text-transform: capitalize;
   margin-bottom: 12px;
+  padding-top: 10px;
 }
 
 .quantity-input {
@@ -786,9 +800,8 @@ a.navigation-main:hover {
   text-transform: none;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
-  display: block;
   width: 216px;
-  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   margin-top: 6px;
   position: absolute;
   left: 50%;
@@ -797,7 +810,7 @@ a.navigation-main:hover {
   display: none;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
+.tooltip:hover .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
@@ -846,22 +859,25 @@ a.navigation-main:hover {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+  margin-bottom: 7px;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
   color: white;
+  width: 1060px;
 }
 
 .breadcrumbs-item {
   display: inline;
   font-size: 16px;
   color: #ffffff;
-  margin-right: 30px;
+  margin-right: 21px;
   position: relative;
 }
 
@@ -885,7 +901,7 @@ a.navigation-main:hover {
   content: "";
   position: absolute;
   top: 5px;
-  right: -15px;
+  right: -11px;
   background-image: url(../images/home_arrov.svg);
   background-repeat: no-repeat;
   background-position: left;
@@ -903,11 +919,13 @@ a.navigation-main:hover {
   height: 20px;
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
-  background-position: 3px 3px;
+  background-position: 0 3px;
 }
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
   gap: 70px;
 }
 
@@ -952,8 +970,8 @@ a.navigation-main:hover {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
-  border: 3px solid #83b3d3;
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
 }
 
 .catalog-filter-item:active {
@@ -988,6 +1006,7 @@ a.navigation-main:hover {
 
 .filter-price {
   margin-left: auto;
+  width: 288px;
 }
 
 .price-unputs {
@@ -995,7 +1014,15 @@ a.navigation-main:hover {
   gap: 2px;
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 36px;
+  margin-bottom: 45px;
+}
+
+.price input {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-right: 45px;
 }
 
 .range-field::-webkit-outer-spin-button,
@@ -1038,7 +1065,7 @@ a.navigation-main:hover {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: 0;
 }
 
 .toggle-max {
@@ -1083,7 +1110,8 @@ a.navigation-main:hover {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  margin-top: 56px;
 }
 
 .button-apply {
@@ -1107,6 +1135,7 @@ a.navigation-main:hover {
 
 .button-apply:focus {
   background: #68a2ca;
+  outline: none;
 }
 
 .button-apply:active {
@@ -1125,7 +1154,6 @@ a.navigation-main:hover {
   background-color: transparent;
   border: none;
   padding: 8px 50px;
-  border: none;
   border-radius: 4px;
 }
 
@@ -1134,7 +1162,7 @@ a.navigation-main:hover {
 }
 
 .button-reset:focus {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .button-reset:active {
@@ -1144,14 +1172,13 @@ a.navigation-main:hover {
 .sorting {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   width: 1060px;
   margin: 0 auto 40px auto;
 }
 
 .sorting-text {
-  margin: 0;
-  margin-right: auto;
+  margin: 8px auto 0 0;
   padding: 0;
   font-weight: 700;
   font-size: 30px;
@@ -1161,7 +1188,7 @@ a.navigation-main:hover {
 
 .select-control {
   width: 292px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   font-family: inherit;
@@ -1183,15 +1210,17 @@ a.navigation-main:hover {
 .sorting-buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   gap: 8px;
-  margin-left: 70px;
+  margin-left: 60px;
+  width: 170px;
 }
 
 .sorting-button {
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1226,10 +1255,14 @@ a.navigation-main:hover {
   height: 48px;
 }
 
+.hotels {
+  padding-bottom: 60px;
+}
+
 .hotel-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 18px;
   list-style-type: none;
   padding: 0;
   width: 1060px;
@@ -1248,9 +1281,13 @@ a.navigation-main:hover {
 .hotel-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px 20px;
+  gap: 17px 20px;
   margin-top: auto;
   align-items: center;
+}
+
+.hotel-card-image {
+  display: block;
 }
 
 .hotel-card-title {
@@ -1414,6 +1451,7 @@ a.navigation-main:hover {
   padding: 0 12px;
   box-sizing: border-box;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .pagination-link:hover {
