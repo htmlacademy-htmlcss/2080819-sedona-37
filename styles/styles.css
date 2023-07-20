@@ -237,6 +237,7 @@ a.navigation-main:hover {
   margin: 0 270px 90px 270px;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .advantages-list {
@@ -262,7 +263,7 @@ a.navigation-main:hover {
   display: flex;
   flex-direction: column;
   justify-items: flex-start;
-  padding: 113px 85px 103px;
+  padding: 113px 83px 103px;
   box-sizing: border-box;
 }
 
@@ -293,6 +294,11 @@ a.navigation-main:hover {
   margin: 0 auto 62px auto;
   width: 180px;
   position: relative;
+  color: #000000;
+}
+
+.advantages-item-wide .advantages-title {
+  color: #ffffff;
 }
 
 .advantages-title::after {
@@ -329,6 +335,7 @@ a.navigation-main:hover {
   margin: 0 350px 64px 350px;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .services-list {
@@ -408,6 +415,7 @@ a.navigation-main:hover {
   margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .hotel-search {
@@ -449,7 +457,7 @@ a.navigation-main:hover {
 .subscription-index {
   background-color: #3f5e72;
   color: #ffffff;
-  background-image: url("../images/background-sub.jpg");
+  background-image: url("../images/background_sub.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -834,7 +842,7 @@ a.navigation-main:hover {
 
 .tooltip-text:after {
   content: "";
-  background-image: url("../images/tooltip-arrow.svg");
+  background-image: url("../images/tooltip_arrow.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -917,6 +925,11 @@ a.navigation-main:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.modal-search:disabled {
+  background: #68a2ca;
+  opacity: 0.3;
+}
+
 .filter-hotels {
   background-color: #3f5e72;
   background-image: url("../images/filter.jpg");
@@ -975,7 +988,7 @@ a.navigation-main:hover {
   position: absolute;
   top: 5px;
   right: -11px;
-  background-image: url(../images/home_arrov.svg);
+  background-image: url("../images/home_arrov.svg");
   background-repeat: no-repeat;
   background-position: left;
   width: 7px;
@@ -990,7 +1003,7 @@ a.navigation-main:hover {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/home.svg);
+  background-image: url("../images/home.svg");
   background-repeat: no-repeat;
   background-position: 0 3px;
 }
@@ -1057,7 +1070,7 @@ a.navigation-main:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../images/mark.svg);
+  background-image: url("../images/mark.svg");
   width: 20px;
   height: 20px;
 }
@@ -1111,6 +1124,10 @@ a.navigation-main:hover {
 .range-field::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range-field[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .range-scale {
@@ -1270,6 +1287,7 @@ a.navigation-main:hover {
 
 .select-control {
   width: 292px;
+  min-width: 292px;
   padding: 12px 20px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
@@ -1279,9 +1297,10 @@ a.navigation-main:hover {
   line-height: 21px;
   appearance: none;
   cursor: pointer;
-  background-image: url(../images/select_arrov.svg);
+  background-image: url("../images/select_arrov.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #ffffff;
 }
 
 .select-control:hover,
@@ -1299,6 +1318,7 @@ a.navigation-main:hover {
   justify-content: end;
   gap: 8px;
   margin-left: 60px;
+  min-width: 170px;
   width: 170px;
 }
 
@@ -1326,15 +1346,15 @@ a.navigation-main:hover {
 }
 
 .sorting-card {
-  background-image: url(../images/cards.svg);
+  background-image: url("../images/cards.svg");
 }
 
 .sorting-big-photo {
-  background-image: url(../images/photo_big.svg);
+  background-image: url("../images/photo_big.svg");
 }
 
 .sorting-list {
-  background-image: url(../images/list.svg);
+  background-image: url("../images/list.svg");
 }
 
 .sorting .button {
@@ -1476,7 +1496,7 @@ a.navigation-main:hover {
   margin: 0;
   height: 17px;
   width: 18px;
-  background: url(../images/star.svg) space 0 0;
+  background: url("../images/star.svg") space 0 0;
 }
 
 .star-one {

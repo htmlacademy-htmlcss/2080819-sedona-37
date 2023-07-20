@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="images/favicon.png" />
   </head>
 
@@ -351,7 +351,7 @@
             method="post"
           >
             <div class="modal-date">
-              <label>Дата заезда:</label>
+              <label for="firstDate">Дата заезда:</label>
               <div class="input-wrap">
                 <input
                   type="text"
@@ -360,6 +360,7 @@
                   placeholder="Укажите дату"
                   name="arrive-date"
                   value="27 апреля 2020"
+                  required
                 />
                 <p class="error-message">
                   Мы не можем отправить вас в прошлое.
@@ -367,7 +368,7 @@
               </div>
             </div>
             <div class="modal-date">
-              <label>Дата выезда:</label>
+              <label for="lastDate">Дата выезда:</label>
               <div class="input-wrap">
                 <input
                   type="text"
@@ -376,6 +377,7 @@
                   placeholder="Укажите дату"
                   name="leave-date"
                   value="1 сентября 2023"
+                  required
                 />
                 <p class="answer-message">
                   На эти даты есть свободные номера. Пока есть.
@@ -385,7 +387,7 @@
 
             <div class="quantity">
               <div class="quantity-wrap">
-                <label class="adult">Взрослые:</label>
+                <label class="adult" for="adult-coint">Взрослые:</label>
                 <div class="buttons-wrap">
                   <button class="adult-minus quantity-button" type="button">
                     <svg
@@ -406,6 +408,7 @@
                     class="quantity-input adult-input"
                     value="2"
                     name="adult-coint"
+                    required
                   />
                   <button class="adult-plus quantity-button" type="button">
                     <svg
@@ -425,7 +428,7 @@
               </div>
 
               <div class="quantity-wrap">
-                <label class="kids form-label"
+                <label class="kids form-label" for="kids-coint"
                   >Дети:
                   <span class="tooltip"
                     ><button
@@ -500,7 +503,7 @@
               </div>
             </div>
 
-            <button class="modal-search">Найти</button>
+            <button class="modal-search" type="submit">Найти</button>
           </form>
         </div>
       </div>
